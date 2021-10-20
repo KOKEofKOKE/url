@@ -15,13 +15,13 @@
 	<body>
 		<h2>URLジャンパー</h2>
 		<p>URLを入力して直接アクセスしたい人用です(例:http://google.com)</p>
-		<input id="copyTarget" type="url" value="http://" style="width:60%; box-sizing:border-box">
-		<button onclick="jumpToUrl()" style="width:auto">Jump!</button>
+		<input id="jumpTarget" type="url" value="http://" style="width:60%; box-sizing:border-box">
+		<button onclick="jumpToUrl()">Jump!</button>
 
 		<script>
 		function jumpToUrl() {
 		// 関数定義
-		var inputUrl = document.getElementById("copyTarget");
+		var inputUrl = document.getElementById("jumpTarget");
 		var url = inputUrl.value;
 		//変数urlにURLを代入
 		window.location.href = url;
